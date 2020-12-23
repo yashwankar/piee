@@ -31,11 +31,18 @@ public static void main(String[] args){
 /*
 Learnings:
 
-The class variables can be made static.
-but for the initialization of those variables with some value
-if there is some kind of calculation involved like if else conditionals, try catch exceptional handling
-in that case the static initializer block is used.
+The major advantage is to use these blocks is that it allows us to make specific initial values
+to the class variables based on some conditionals or error handling block.
 
+It is like giving some entry to blueprint form only when it passes some condition.
+Also, the data members used in this block must be declared as static beforehand.
+like, static <datatype> <varname>;
+
+otherwise, the main funtion will show the static members can not be accessed by
+non-static data types.
+error: non-static variable <varname> cannot be referenced from a static context
+
+The syntax for declaring static initialization blocks are:
 static{
     //operations
 }
