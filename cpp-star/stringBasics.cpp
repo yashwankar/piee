@@ -15,3 +15,8 @@ int main() {
   
     return 0;
 }
+/*
+Learnings:
+strings are mutable just like arrays, 
+their values can be changed using indexing
+*/
